@@ -3,7 +3,6 @@ import { getAuth } from "@clerk/nextjs/server";
 import { NextResponse, NextRequest } from "next/server";
 import prismadb from "@/lib/prismadb";
 
-
 export async function POST(req: NextRequest) {
   try {
     const { userId } = getAuth(req); 
