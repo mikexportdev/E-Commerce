@@ -14,6 +14,8 @@ const SetupPage = () => {
     }
   }, [isOpen, onOpen]);
 
-  return null;
+  return (
+    <p>dsadasd</p>
+  );
 }
 export default SetupPage;

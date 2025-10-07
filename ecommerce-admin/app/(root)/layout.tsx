@@ -1,14 +1,13 @@
 import prismadb from "@/lib/prismadb";
 import { getAuth } from "@clerk/nextjs/server";
 import { redirect } from "next/navigation";
-import { NextResponse, NextRequest } from "next/server";
+import { NextRequest } from "next/server";
 
 export default async function SetupLayout(req: NextRequest,{
   children,
-  params,
+  
 }: {
   children: React.ReactNode;
-  params: { storeId: string };
 }) {
   const { userId } = getAuth(req); 
   if (!userId) {

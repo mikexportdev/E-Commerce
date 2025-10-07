@@ -8,7 +8,7 @@ export default async function DashboardLayout(req: NextRequest,{
   children,
   params,
 }: {
-  children: ReactNode;
+  children: React.ReactNode;
   params: { storeId: string };
 }) {
   const { userId } = getAuth(req); 
