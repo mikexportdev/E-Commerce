@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import "./globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
 import { ModalProvider } from "@/providers/modal-provider";
@@ -7,7 +6,7 @@ import { Inter } from "next/font/google";
 
 const inter = Inter({subsets:['latin']})
 
-export const metadata: Metadata = {
+export const metadata = {
   title: "Admin Dashboard",
   description: "Admin Dashboard",
 };
